@@ -1,28 +1,19 @@
-body {
-    background-color: rgb(220,220,220);
-}
-
-header{
+* {
     font-family: sans-serif;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    background:#999b9e;
-    height: auto;
-    padding: 5px;
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-div.lista{
-    float: right;
-    margin: 5px;
+body {background-color: rgb(220,220,220);}
+
+.menu_bar {
+	display:none;
 }
 
-li {
-    display:inline;
-    padding-left:3px;
-    padding-right:10px; 
-}
-
-h1.inicial{
+h1 {
     position: relative;
     z-index: 2;
     margin-bottom: 50px;
@@ -31,9 +22,64 @@ h1.inicial{
     font-weight: bold;
     font-size: 70px;
     color: #fff;
-    height: auto;
-    padding: 10px;
     text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+}
+
+h2 {
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+h2.especial {
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+	color: rgb(255, 255, 255);
+}
+
+ h3 {
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+h4 {
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    color:rgb(0, 0, 0);
+	text-align: left;
+}
+
+p.pie {
+    color:rgb(0, 0, 0);
+	text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+	margin: 0 auto;
+}
+
+td, th {
+    background: #fff;
+    color: #000;
 }
 
 article.apartados{
@@ -51,28 +97,86 @@ article.apartados{
 }
 
 img.titulo{
-    border-radius: 8px;
-    max-width: 45px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 30px;;
     height: auto;
-    padding: 10px;
     margin: 0%;
+    float: right;
+}
+
+img.titulo_dos{
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    margin:0;  
+    float: right;
 }
 
 img {
-    border-radius: 8px;
-    max-width: 80%;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 200px;
     height: auto;
     margin: 2%;
 }
 
 img.query{
     border-radius: 30px;
-    max-width: 80%;
+    width: 100%;
+    max-width: 200px;
     height: auto;
 }
 
+img:hover{border: 2px solid #777;}
+
+header {
+	font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background:#999b9e;
+    height: auto;
+    width:100%;
+    margin-top: 0px;
+}
+
+header nav {
+	background:#999b9e;
+	z-index:1000;
+	max-width: 100%;
+	width:95%;
+	margin:20px auto;
+}
+
+header nav ul {
+	list-style:none;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+header nav ul li:hover {
+	background:#555455;
+}
+
+header nav ul li a {
+	color:rgb(0, 0, 0);
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+
+header nav ul li a:hover {
+	color:#fff;
+}
+
+header nav ul li a span {
+	margin-right:10px;
+}
+
 footer{
-    margin-top: 5%;
 	text-align: center;
     font-family: sans-serif;
     font-weight: bold;
@@ -80,4 +184,79 @@ footer{
     background:#999b9e;
     height: auto;
     padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+
+    .quitar {
+        display:none;
+    }
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#999b9e;
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	table {
+		width:100%;
+	}
+	thead {
+		display: none;
+	}
+	tr:nth-of-type(2n) {
+		background-color: inherit;
+	}
+	tr td:first-child {
+		background: #f0f0f0;
+		font-weight:bold;
+		font-size:1.3em;
+	}
+	tbody td {
+		display: block;
+		text-align:center;
+	}
+	tbody td:before {
+		content: attr(data-th);
+		display: block;
+		text-align:center;
+	}
 }

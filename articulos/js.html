@@ -1,19 +1,121 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Provisional</title>
+        <!--TITLE-->
+		<title>NachClass/JavaScript</title>
 		
 		<!--LINK-->
-		<link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+		<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
+        <link rel="shortcut icon" href="../imagenes/favicon.jpg" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- libreria jquery alojado en la red-->
-		
+		<script src="../scripts/main.js"></script>
+
 		<!--META-->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="authors"
 			content="Ignacio Martínez de Carvajal Andrés">
-		<meta name="description" content="Manual for different tools">
+		<meta name="description" content="Manual for JavaScript">
     </head>
 
     <body>
-        <p>En construccion</p>
+        <header>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span></span>Menú<img class = "titulo" src="../imagenes/favicon.jpg" alt="Save image"/></a>
+            </div>
+            <nav>
+                <div class="quitar"><img class = "titulo_dos" src="../imagenes/favicon.jpg" alt="Save image"/></div>
+                <ul>
+                    <li><span></span><a href="somos.html">Quienes somos</a></li>
+                    <li><span></span><a href="contactar.html">Contáctanos</a></li>
+                    <li><span></span><a href="../index.html">Volver Atrás</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <article class="apartados">
+                <h2>Qué es JavaScript</h2>
+				<p>JavaScript es el lenguaje de programación más popular del mundo. <br/>
+					JavaScript es el lenguaje de programación de la Web. <br/>
+					JavaScript es fácil de aprender. <br/>
+				</p>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Ejemplo</h2>
+                <table>
+                    <tr>
+                        <td><pre><code>
+<h3>&nbsp;Mi primer JavaScript&nbsp;</h3>
+<button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click para ver fecha y hora.
+</button>
+<p id="demo"></p>
+                        </code></pre></td>
+                    </tr>
+                </table>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Otro ejemplo</h2>
+                <table>
+                    <tr>
+                        <td><pre><code>
+<h3>&nbsp;Modificando el enlace&nbsp;</h3>
+<a href="#" id="mienlace">&nbsp;Enlace demo</a>
+<script>
+    document.getElementById("mienlace").style.backgroundColor="yellow";
+</script>
+                        </code></pre></td>
+                    </tr>
+                </table>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>¿Por qué estudiar JavaScript?</h2>
+                <p>JavaScript es uno de los <b>3 lenguajes que todos</b> los desarrolladores web deben aprender:</p>
+                <br/>
+                <p>
+                    1. <b>HTML</b> para definir el contenido de las páginas web<br/>
+                    2. <b>CSS</b> para especificar el diseño de las páginas web<br/>
+                    3. <b>JavaScript</b> para programar el comportamiento de las páginas web<br/>
+                </p>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Velocidad de aprendizaje</h2>
+                <p>
+                    En este tutorial, la velocidad de aprendizaje es tu elección.<br/>
+                    Todo depende de ti.<br/>
+                    Si tiene dificultades, tómese un descanso o vuelva a leer el material.<br/>
+                    <b>Siempre</b> asegúrese de comprender <b>todos</b> los ejemplos de "Pruébelo usted mismo".<br/>
+                    La única forma de convertirse en un programador inteligente es: Practicar. Práctica. Práctica. Código. Código. ¡Código!<br/>
+                </p>
+            </article>
+
+            <article class="apartados">
+                <h2>Preguntas frecuentes</h2>
+                <p>
+                    ¿Cómo obtengo JavaScript?<br/>
+                    ¿Dónde puedo descargar JavaScript?<br/>
+                    ¿JavaScript es gratuito?<br/>
+                </p>
+                <br/>
+                <p><b>
+                    No es necesario que obtenga o descargue JavaScript.<br/>
+                    JavaScript ya se está ejecutando en su navegador en su computadora, en su tableta y en su teléfono inteligente.<br/>
+                    JavaScript es de uso gratuito para todos.<br/>
+                </b></p>
+            </article>
+        </section>
+
+        <footer>
+            <p class="pie">Desarrollado por Ignacio Martínez de Carvajal Andrés</p>
+        </footer>
     </body>
 </html>

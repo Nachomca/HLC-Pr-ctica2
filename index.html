@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <!--TITLE-->
 		<title>NachClass</title>
@@ -6,7 +7,8 @@
 		<!--LINK-->
 		<link rel="stylesheet" type="text/css" href="estilos/estilo.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- libreria jquery alojado en la red-->
-		<link rel="shortcut icon" href="imagenes/favicon.jpg" />
+		<script src="scripts/main.js"></script>
+        <link rel="shortcut icon" href="imagenes/favicon.jpg" />
 
 		<!--META-->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -16,27 +18,35 @@
     </head>
     <body>
         <header>
-            <img class = "titulo" src="imagenes/favicon.jpg">
-            <div class="lista">
-                <ul>
-                    <li>Quienes somos</li>
-                    <li>Contáctanos</li>
-                </ul>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span></span>Menú<img class = "titulo" src="imagenes/favicon.jpg" alt="Save image"/></a>
             </div>
+            <nav>
+                <div class="quitar"><img class = "titulo_dos" src="imagenes/favicon.jpg" alt="Save image"/></div>
+                <ul>
+                    <li><span></span><a href="articulos/somos.html">Quienes somos</a></li>
+                    <li><span></span><a href="articulos/contactar.html">Contáctanos</a></li>
+                </ul>
+            </nav>
         </header>
 
         <section>
             <article class = "apartados">
-                <a href="articulos/js.html"><img src="imagenes/js.png"></img></a>
-                <a href="articulos/js.html"><img src="imagenes/node.png"></img></a>
-                <a href="articulos/js.html"><img src="imagenes/angular.png"></img></a>
-                <a href="articulos/js.html"><img src="imagenes/bootstrap.png"></img></a>
-                <a href="articulos/js.html"><img class = "query" src="imagenes/jquery.jpg"></img></a>
+                <br>
+                <h2 class="especial">Aprende a programar!</h2>
+                <br>
+                <h3>Aquí encontrarás información sobre: </h3>
+                <br>
+                <a href="articulos/js.html"><img src="imagenes/js.png" alt="Save image"/></a>
+                <a href="articulos/js.html"><img src="imagenes/node.png" alt="Save image"/></a>
+                <a href="articulos/js.html"><img src="imagenes/angular.png" alt="Save image"/></a>
+                <a href="articulos/js.html"><img src="imagenes/bootstrap.png" alt="Save image"/></a>
+                <a href="articulos/js.html"><img class = "query" src="imagenes/jquery.jpg" alt="Save image"/></a>
             </article>
         </section>
 
         <footer>
-            <p>Desarrollado por Ignacio Martínez de Carvajal Andrés</p>
+            <p class="pie">Desarrollado por Ignacio Martínez de Carvajal Andrés</p>
         </footer>
 
     </body>

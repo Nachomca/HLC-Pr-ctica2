@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--TITLE-->
+		<title>NachClass/JavaScript</title>
+		
+		<!--LINK-->
+		<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
+        <link rel="shortcut icon" href="../imagenes/favicon.jpg" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- libreria jquery alojado en la red-->
+		<script src="../scripts/main.js"></script>
+
+		<!--META-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="authors"
+			content="Ignacio Martínez de Carvajal Andrés">
+		<meta name="description" content="Manual for JavaScript">
+    </head>
+
+    <body>
+        <header>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span></span>Menú<img class = "titulo" src="../imagenes/favicon.jpg" alt="Save image"/></a>
+            </div>
+            <nav>
+                <div class="quitar"><img class = "titulo_dos" src="../imagenes/favicon.jpg" alt="Save image"/></div>
+                <ul>
+                    <li><span></span><a href="somos.html">Quienes somos</a></li>
+                    <li><span></span><a href="contactar.html">Contáctanos</a></li>
+                    <li><span></span><a href="../index.html">Volver Atrás</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <article class="apartados">
+                <h2>Qué es Node.js</h2>
+				<p>Node.js®, Node.js, es un entorno en tiempo de ejecución multiplataforma para la capa del servidor<br/> 
+                    (en el lado del servidor) basado en JavaScript.</p>
+                <br/>
+                <p>Node.js es un entorno controlado por eventos diseñado para crear aplicaciones escalables, <br/>
+                    permitiéndote establecer y gestionar múltiples conexiones al mismo tiempo. Gracias a esta <br/>
+                    característica, no tienes que preocuparte con el bloqueo de procesos, pues no hay bloqueos.</p>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Cómo funciona</h2>
+                <p>
+                    El diseño de Node.js está inspirado en sistemas como el Event Machine de Ruby o el Twisted de Python.<br/>
+                    Sin embargo, Node.js presenta un bucle de eventos como una construcción en tiempo de ejecución en lugar de una biblioteca.<br/>
+                    Este bucle de eventos es invisible para el usuario.<br/>
+                </p>
+                <br/>
+                <p>
+                    Otra característica especial de Node.js es que está diseñado para simplificar la comunicación.<br/>
+                    No tiene subprocesos, pero te permite aprovechar múltiples núcleos en su entorno y compartir sockets entre procesos.<br/>
+                </p>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Características principales</h2>
+                <p>Resumiendo, Node.js se ha hecho popular en los últimos años gracias a las siguientes características:</p>
+                <br/>
+                <p><b>Velocidad</b>. Node.js está construido sobre el motor de JavaScript V8 de Google Chrome,<br/>
+                    por eso su biblioteca es muy rápida en la ejecución de código.
+                </p>
+                <br/>
+                <p>
+                    <b>Sin búfer</b>. Las aplicaciones de Node.js generan los datos en trozos (chunks), nunca los almacenan en búfer.
+                </p>
+                <br/>
+                <p>
+                    <b>Asíncrono y controlado por eventos</b>. Como hemos dicho anteriormente, las APIs de la biblioteca de Node.js son asíncronas, sin bloqueo.<br/>
+                    Un servidor basado en Node.js no espera que una API devuelva datos.<br/>
+                    El servidor pasa a la siguiente API después de llamarla, y un mecanismo de notificación de eventos ayuda al servidor a obtener una respuesta de la llamada a la API anterior.<br/>
+                </p>
+                <br/>
+                <p>
+                    <b>Un subproceso escalable</b>. Node.js utiliza un modelo de un solo subproceso con bucle de eventos.<br/>
+                    Gracias al mecanismo de eventos, el servidor responde sin bloqueos, como hemos dicho.<br/>
+                    Esto hace que el servidor sea altamente escalable comparando con los servidores tradicionales como el Servidor HTTP de Apache.<br/>
+                </p>
+            </article>
+
+            <article class="apartados">
+                <h2>Para qué sirve</h2>
+                <p>Puedes utilizar Node.js para diferentes tipos de aplicaciones. Los siguientes son algunos de los ejemplos:</p>
+                <br/>
+                <p>Aplicaciones de transmisión de datos (streaming)</p>
+                <br/>
+                <p>Aplicaciones intensivas de datos en tiempo real</p>
+                <br/>
+                <p>Aplicaciones vinculadas a E/S</p>
+                <br/>
+                <p>Aplicaciones basadas en JSON:API</p>
+                <br/>
+                <p>Aplicaciones de página única</p>
+            </article>
+
+        </section>
+
+        <footer>
+            <p class="pie">Desarrollado por Ignacio Martínez de Carvajal Andrés</p>
+        </footer>
+    </body>
+</html>

@@ -13,6 +13,11 @@ body {background-color: rgb(220,220,220);}
 	display:none;
 }
 
+.tabla{
+	text-align: left;
+	padding: 10px;
+}
+
 h1 {
     position: relative;
     z-index: 2;

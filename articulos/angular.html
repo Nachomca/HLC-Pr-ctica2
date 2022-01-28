@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--TITLE-->
+		<title>NachClass/JavaScript</title>
+		
+		<!--LINK-->
+		<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
+        <link rel="shortcut icon" href="../imagenes/favicon.jpg" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- libreria jquery alojado en la red-->
+		<script src="../scripts/main.js"></script>
+
+		<!--META-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="authors"
+			content="Ignacio Martínez de Carvajal Andrés">
+		<meta name="description" content="Manual for JavaScript">
+    </head>
+
+    <body>
+        <header>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span></span>Menú<img class = "titulo" src="../imagenes/favicon.jpg" alt="Save image"/></a>
+            </div>
+            <nav>
+                <div class="quitar"><img class = "titulo_dos" src="../imagenes/favicon.jpg" alt="Save image"/></div>
+                <ul>
+                    <li><span></span><a href="somos.html">Quienes somos</a></li>
+                    <li><span></span><a href="contactar.html">Contáctanos</a></li>
+                    <li><span></span><a href="../index.html">Volver Atrás</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <article class="apartados">
+                <h2>Qué es AngularJS</h2>
+                <p>AngularJS es un marco de JavaScript</p>
+				<p>AngularJS extiende HTML con nuevos atributos.</p>
+                <br/>
+                <p>AngularJS es perfecto para aplicaciones de una sola página (SPA).</p>
+                <br/>
+                <p>AngularJS es fácil de aprender.</p>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Ejemplo de AngularJS</h2>
+                <table>
+					<tr>
+						<td>
+                            <pre><code><div class="tabla">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+
+&lt;div ng-app=""&gt;
+&lt;p>Name : &lt;input type="text" ng-model="name"&gt;&lt;/p&gt;
+&lt;h1>Hello {{name}}&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                            </div></code></pre>
+						</td>
+					</tr>
+                </table>
+			    <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Directivas de AngularJS</h2>
+                <p>Como ya has visto, las directivas de AngularJS son atributos HTML con un prefijo <b>ng</b>.</p>
+                <br/>
+                <p>La directiva <b>ng-init</b> inicializa las variables de la aplicación AngularJS.</p>
+                <br/>
+                <table>
+					<tr>
+						<td>
+                            <pre><code><div class="tabla">
+&lt;div ng-app=""&gt;
+&lt;p&gt;The name is &lt;span ng-bind="firstName"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1>Hello {{name}}&lt;/h1&gt;
+&lt;/div&gt;
+                            </div></code></pre>
+						</td>
+					</tr>
+                </table>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Expresiones de AngularJS</h2>
+                <p>Las expresiones de AngularJS se escriben entre llaves dobles: <b>{{ expression }}</b> .</p>
+                <br/>
+                <p>AngularJS "dará salida" a los datos exactamente donde está escrita la expresión:</p>
+                <br/>
+                <table>
+					<tr>
+						<td>
+                            <pre><code><div class="tabla">
+&lt;p&gt;My first expression: {{ 5 + 5 }}&lt;/p&gt;
+                            </div></code></pre>
+						</td>
+					</tr>
+                </table>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Aplicaciones AngularJS</h2>
+                <p><b>Los módulos</b> de AngularJS definen las aplicaciones de AngularJS.</p>
+                <br/>
+                <p>Los controladores AngularJS <b>controlan</b> las aplicaciones AngularJS.</p>
+                <br/>
+                <p>La directiva <b>ng-app</b> define la aplicación, la directiva <b>ng-controller</b> define el controlador.</p>
+            </article>
+
+        </section>
+
+        <footer>
+            <p class="pie">Desarrollado por Ignacio Martínez de Carvajal Andrés</p>
+        </footer>
+    </body>
+</html>

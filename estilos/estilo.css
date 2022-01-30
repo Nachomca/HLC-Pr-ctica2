@@ -181,6 +181,30 @@ header nav ul li a span {
 	margin-right:10px;
 }
 
+form input {
+	padding: .2em; 
+}
+
+fieldset{
+	padding: 5px;
+}
+
+nav.parrafo
+{
+	margin-top: 20px;
+	background: #777;
+	border-radius: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom:15px;
+}
+
+nav.form{
+	float: center;
+	text-align: left;
+}
+
 footer{
 	text-align: center;
     font-family: sans-serif;

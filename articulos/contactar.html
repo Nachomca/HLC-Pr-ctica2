@@ -33,25 +33,99 @@
 
         <section>
             <article class="apartados">
-                <h2>Rellena el formulario</h2>
-                <form name="formulario" id="formulario" >
-                    <input type="text" name="elemento" id="elemento" />
-                    <input type="text" id="texto" />
-
-                    <input type="radio" value="si" name="pregunta" id="pregunta_si"/> SI
-                    <input type="radio" value="no" name="pregunta" id="pregunta_no"/> NO
-                    <input type="radio" value="nsnc" name="pregunta" id="pregunta_nsnc"/> NS/NC
-
-                    <input type="checkbox" value="condiciones" name="condiciones" id="condiciones"/> He leído y acepto las condiciones
-                    <input type="checkbox" value="privacidad" name="privacidad" id="privacidad"/> He leído la política de privacidad
-
-                    <select id="opciones" name="opciones">
-                        <option value="1">Primer valor</option>
-                        <option value="2">Segundo valor</option>
-                        <option value="3">Tercer valor</option>
-                        <option value="4">Cuarto valor</option>
-                    </select>
-                  </form>
+                <h2>Contacta con nosotros</h2>
+                <form action="mailto:nacho@nacho.com" method="post" name="formulario" id="formulario" onsubmit="return validacion()" >
+                    <nav class="parrafo">
+                        <fieldset>
+                            <legend><h3><font color="#2C2C2C">Datos personales</font></h3></legend>
+                            <nav class="form"> 
+                                Nombre: <font color="yellow" size="2px"><b>* Dato Obligatorio</b></font>
+                                <br/>
+                                <input name="nombre" id="nombre" type="text" />
+                                <br/>
+                                <br/>
+                                <br/>
+                                Apellido:
+                                <br/>
+                                <input type="text" size="35" />
+                                <br/>
+                                <br/>
+                                <br/>
+                                Teléfono: <font color="yellow" size="2px"><b>* Dato Obligatorio</b></font>
+                                <br/>
+                                <input name="telefono" id="telefono" type="text" size="9" maxlength = "9"/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                Email: <font color="yellow" size="2px"><b>* Dato Obligatorio</b></font>
+                                <br/>
+                                <input name="mail" id="mail" type="text" size="35" />
+                                <br/>
+                                <br/>
+                                <br/>
+                                Edad: <font color="yellow" size="2px"><b>* Dato Obligatorio</b></font>
+                                <br/>
+                                <input name="edad" id="edad" type="text" size="2" maxlength = "2"/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                Sexo:
+                                <br/>
+                                <input type="radio" checked="checked" name="Sexo" /> Hombre<br/>
+                                <input type="radio" name="Sexo" /> Mujer<br/>
+                                <br/>
+                                <br/>
+                            </nav>
+                        </fieldset>
+                    </nav>
+                     
+                    <nav class="parrafo">
+                        <fieldset>
+                            <legend><h3><font color="#2C2C2C">Post</font></h3></legend>
+                            <nav class="form">
+                                Asunto:
+                                <br/>
+                                <input type="text" />
+                                <br/>
+                                <br/>
+                                <br/>
+                                Desarrolla tu post: <font color="yellow" size="2px"><b>* Dato Obligatorio</b></font>
+                                <br/>
+                                <textarea rows="10" cols="40" name="post" id="post"></textarea>
+                                <br/>
+                                <br/>
+                                Incluir foto
+                                <input type="file" src="url" />
+                                <br/>
+                                <br/>
+                                Nota: <font color="yellow" size="2px"><b>* Dato Obligatorio</b></font>
+                                <br/>
+                                <select name="nota" id="nota">
+                                <option value="0">0</option>
+                                <option value="1">1</option> 
+                                <option value="2">2</option> 
+                                <option value="3">3</option>
+                                <option value="4">4</option> 
+                                <option value="5">5</option> 
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                </select>
+                                <br/>
+                                <br/>
+                            </nav>
+                        </fieldset>
+                    </nav>
+                     
+                    <nav class="parrafo">
+                        Subscribirse al boletín de novedades<input type="checkbox" checked="checked" />
+                        <br/>
+                        <br/>    
+                        <input type="submit" value="   Enviar   ">   <input type="reset" value="Borrar los datos introducidos" />
+                    </nav>
+                </form>
             </article>
         </section>
 

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--TITLE-->
+		<title>NachClass/JQuery</title>
+		
+		<!--LINK-->
+		<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
+        <link rel="shortcut icon" href="../imagenes/favicon.jpg" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- libreria jquery alojado en la red-->
+		<script src="../scripts/main.js"></script>
+
+		<!--META-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="authors"
+			content="Ignacio Martínez de Carvajal Andrés">
+		<meta name="description" content="Manual for JavaScript">
+    </head>
+
+    <body>
+        <header>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span></span>Menú<img class = "titulo" src="../imagenes/favicon.jpg" alt="Save image"/></a>
+            </div>
+            <nav>
+                <div class="quitar"><img class = "titulo_dos" src="../imagenes/favicon.jpg" alt="Save image"/></div>
+                <ul>
+                    <li><span></span><a href="somos.html">Quienes somos</a></li>
+                    <li><span></span><a href="contactar.html">Contáctanos</a></li>
+                    <li><span></span><a href="../index.html">Volver Atrás</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <article class="apartados">
+                <h2>Introducción</h2>
+				<p>jQuery es una biblioteca de JavaScript.<br/>
+                    jQuery simplifica enormemente la programación de JavaScript.<br/>                
+                    jQuery es fácil de aprender.<br/></p>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Qué es JQuery</h2>
+                <p>
+                    jQuery es una biblioteca de JavaScript liviana, "escribe menos, haz más".<br/>
+                    El propósito de jQuery es hacer mucho más fácil el uso de JavaScript en su sitio web.<br/>
+                    jQuery toma muchas tareas comunes que requieren muchas líneas de código JavaScript para llevarlas a cabo<br/>
+                    y las envuelve en métodos a los que puede llamar con una sola línea de código.<br/>
+                    jQuery también simplifica muchas de las cosas complicadas de JavaScript, como las llamadas AJAX y la manipulación DOM.<br/>
+                    <br/>
+                    La biblioteca jQuery contiene las siguientes características:<br/>
+                    Manipulación de HTML/DOM<br/>
+                    manipulación de CSS<br/>
+                    Métodos de eventos HTML<br/>
+                    Efectos y animaciones<br/>
+                    AJAX<br/>
+                    Utilidades<br/>
+                    <br/>
+                    Consejo: Además, jQuery tiene complementos para casi cualquier tarea.<br/>
+                </p>
+                <br/>
+            </article>
+
+            <article class="apartados">
+                <h2>Agregar jQuery a sus páginas web</h2>
+                <p>
+                    Hay varias formas de comenzar a usar jQuery en su sitio web. Usted puede:<br/>
+                    Descarguar la biblioteca jQuery de jQuery.com<br/>
+                    Incluir jQuery desde un CDN, como "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"<br/>
+                    en un script.
+                </p>
+            </article>
+
+            <article class="apartados">
+                <h2>Ejemplo</h2>
+                <p>A continuación, vereis un ejemplo de carrusel de fotos con JQuery</p>
+            </article>
+
+            <a href="#" id="mostrar">Mostrar</a>  /  <a href="#" id="ocultar">Ocultar</a>
+            <ul class="query">
+                <li class="query"><img src="https://www.lawebera.es/images/servicios-webera-boton.png"></li>
+                <li class="query"><img src="https://www.lawebera.es/images/servicios-webera-boton.png"></li>
+                <li class="query"><img src="https://www.lawebera.es/images/servicios-webera-boton.png"></li>
+                <li class="query"><img src="https://www.lawebera.es/images/servicios-webera-boton.png"></li>
+                <li class="query"><img src="https://www.lawebera.es/images/servicios-webera-boton.png"></li>
+                <li class="query"><img src="https://www.lawebera.es/images/servicios-webera-boton.png"></li>
+                <li class="query"><img src="https://www.lawebera.es/images/servicios-webera-boton.png"></li>
+                <li class="query"><img src="https://www.lawebera.es/images/servicios-webera-boton.png"></li>
+            </ul>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+            <script>
+            $(document).ready(function() {
+                var lista = $('li').hide();
+                $('#mostrar').click(function() {
+                        var i = 0;
+                        (function mostrarimg() {
+                            lista.eq(i++).fadeIn(400, mostrarimg);
+                        })();
+                });
+                $('#ocultar').click(function() {
+                        var i = $('li').size();
+                        (function ocultarimg() {
+                            lista.eq(--i).fadeOut(200, ocultarimg);
+                        })();
+                });
+            });
+            </script>
+
+        </section>
+
+        <footer>
+            <p class="pie">Desarrollado por Ignacio Martínez de Carvajal Andrés</p>
+        </footer>
+    </body>
+</html>

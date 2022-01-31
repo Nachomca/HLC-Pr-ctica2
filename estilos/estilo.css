@@ -205,6 +205,13 @@ nav.form{
 	text-align: left;
 }
 
+li.query {
+    float:  left;
+    list-style: none;
+    margin: 0 25px 25px 0;
+	display: none;
+}
+
 footer{
 	text-align: center;
     font-family: sans-serif;
